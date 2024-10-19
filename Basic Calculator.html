@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/svg" href="https://upload.wikimedia.org/wikipedia/commons/1/1e/Calculator_icon.svg">
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./BasicCalculatorStyle.css">
+</head>
+<body>
+	<div class="window">
+		<div class="back">
+		<form>
+			<a href="#"><p class="brand">CALCI</p></a>
+			<div class="inop">
+				<input type="text" name="op" class="output" disabled="" placeholder="0" style="color: black;">
+			</div>
+			
+			<div class="first" align="center">
+				<input class="in red" type="button" name="ac" value="AC" onclick="op.value=''">
+				<input class="in red" type="button" name="c" value="C" onclick="op.value=op.value.slice(0,-1)">
+				<input class="in" type="button" name="operator" value="/" onclick="op.value+='/'">
+				<input class="in" type="button" name="operator" value="X" onclick="op.value+='*'">
+			</div>
+
+			<div class="first" align="center">
+				<input class="in" type="button" name="num" value="9" onclick="op.value+='9'">
+				<input class="in" type="button" name="num" value="8" onclick="op.value+='8'">
+				<input class="in" type="button" name="num" value="7" onclick="op.value+='7'">
+				<input class="in" type="button" name="operator" value="%" onclick="op.value+='/' + 100">
+			</div>
+
+			<div  align="center">
+				<input class="in" type="button" name="num" value="6" onclick="op.value+='6'">
+				<input class="in" type="button" name="num" value="5" onclick="op.value+='5'">
+				<input class="in" type="button" name="num" value="4" onclick="op.value+='4'">
+				<input class="in" type="button" name="operator" value="-" onclick="op.value+='-'">	
+			</div>
+
+			<div align="center">
+				<input class="in" type="button" name="num" value="3" onclick="op.value+='3'">
+				<input class="in" type="button" name="num" value="2" onclick="op.value+='2'">
+				<input class="in" type="button" name="num" value="1" onclick="op.value+='1'">
+				<input class="in" type="button" name="operator" value="+" onclick="op.value+='+'">	
+			</div>
+				
+			<div class="first" align="center">
+				<input class="in" type="button" name="num" value="." onclick="op.value+='.'">
+				<input class="in" type="button" name="num" value="0" onclick="op.value+='0'">
+				<input class="in" style="width: 21.4vh;" type="button" name="operator" value="=" onclick="op.value=eval(op.value)">
+			</div>
+		</form>
+	</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./ScientificCalculatorStyle.css">
+    <link rel="icon" type="image/svg" href="https://upload.wikimedia.org/wikipedia/commons/1/1e/Calculator_icon.svg">
+	<title>Scientific Calculator</title>
+</head>
+
+<body>
+    <div class="window">
+        <div class="back">
+            <form>
+                <p class="brand">CALCI</p>
+                <div class="inop">
+                    <input type="text" name="op" class="output" disabled="" placeholder="0" id="op">
+                </div>
+                
+                <div class="first" align="center">
+                    <input type="button" name="operator" class="in" value="X²" onclick="op.value+='**2'">
+                    <input type="button" name="operator" class="in" value="X³" onclick="op.value+='**3'">
+                    <input type="button" name="operator" class="in" value="nCr" onclick="op.value+='nCr'">
+                    <input type="button" name="operator" class="in" value="X^" onclick="op.value+='**'">
+                    <input class="in red" type="button" name="c" value="C" onclick="op.value=op.value.slice(0,-1)">
+                    <input class="in red" type="button" name="ac" value="AC" onclick="op.value=''">     
+                </div>
+                <div class="first" align="center">
+                    <input type="button" name="operator" class="in" value="√" onclick="op.value='Math.sqrt(' + op.value + ')';">
+                    <input type="button" name="operator" class="in" value="∛" onclick="op.value='Math.cbrt(' + op.value + ')';">
+                    <input type="button" name="operator" class="in" value="nPr" onclick="op.value+='nPr'">
+                    <input type="button" name="operator" class="in" value="X!" onclick="op.value+='!'">
+                    <input type="button" name="operator" class="in" value="(" onclick="op.value+='(';">
+                    <input type="button" name="operator" class="in" value=")" onclick="op.value+=')';">
+                </div>
+
+                <div class="first" align="center">
+                    <input class="in" type="button" name="num" value="7" onclick="op.value+='7'">
+                    <input class="in" type="button" name="num" value="8" onclick="op.value+='8'">
+                    <input class="in" type="button" name="num" value="9" onclick="op.value+='9'">
+                    <input type="button" name="operator" class="in" value="sin" onclick="op.value='Math.sin(degToRad(' + op.value + '))'">
+                    <input type="button" name="operator" class="in" value="cos" onclick="op.value='Math.cos(degToRad(' + op.value + '))'">
+                    <input type="button" name="operator" class="in" value="tan" onclick="op.value='Math.tan(degToRad(' + op.value + '))'">
+                </div>
+
+                <div align="center">
+                    <input class="in" type="button" name="num" value="6" onclick="op.value+='6'">
+                    <input class="in" type="button" name="num" value="5" onclick="op.value+='5'">
+                    <input class="in" type="button" name="num" value="4" onclick="op.value+='4'">
+                    <input class="in" type="button" name="operator" value="-" onclick="op.value+='-'">
+                    <input class="in" type="button" name="operator" value="X" onclick="op.value+='*'">
+                    <input class="in" type="button" name="operator" value="/" onclick="op.value+='/'">
+                </div>
+
+                <div style="display: flex;">
+                    <div style="width:84%;justify-content: space-around;">
+                        <div class="first" align="center">
+                            <input class="in" type="button" name="num" value="3" onclick="op.value+='3'">
+                            <input class="in" type="button" name="num" value="2" onclick="op.value+='2'">
+                            <input class="in" type="button" name="num" value="1" onclick="op.value+='1'">
+                            <input class="in" type="button" name="operator" value="&#8508;" onclick="op.value+='3.14'">
+                            <input type="button" class="in" name="operator" value="%" onclick="op.value+='/' + 100">
+                        </div>
+
+                        <div class="first" align="center">
+                            <input class="in" type="button" name="num" value="0" onclick="op.value+='0'">
+                            <input class="in" type="button" name="num" value="00" onclick="op.value+='00'">
+                            <input class="in" type="button" name="num" value="." onclick="op.value+='.'">
+                            <input class="in" style="width: 23vh;" type="button" name="oprtr" value="=" onclick="calculate()">
+                        </div>        
+
+                    </div>
+
+                    <div>
+                        <input class="in" style="height: 21.4vh;margin-left: -11px;" name="operator" type="button" value="+" onclick="op.value+='+'">   
+                    </div>
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            let expression = op.value;
+
+            const factorialRegex = /(\d+)!/g;
+            expression = expression.replace(factorialRegex, (match, p1) => factorial(parseInt(p1)));
+
+            const nCrRegex = /(\d+)nCr(\d+)/g;
+            expression = expression.replace(nCrRegex, (match, p1, p2) => nCr(parseInt(p1), parseInt(p2)));
+
+            const nPrRegex = /(\d+)nPr(\d+)/g;
+            expression = expression.replace(nPrRegex, (match, p1, p2) => nPr(parseInt(p1), parseInt(p2)));
+
+            try {
+                op.value = eval(expression);
+            } catch (error) {
+                op.value = 'Error';
+            }
+        }
+
+        function factorial(n) {
+            if (n < 0) return NaN;
+            if (n === 0) return 1;
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        function nCr(n, r) {
+            return factorial(n) / (factorial(r) * factorial(n - r));
+        }
+
+        function nPr(n, r) {
+            return factorial(n) / factorial(n - r);
+        }
+
+        function degToRad(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+    </script>
+</body>
+</html>

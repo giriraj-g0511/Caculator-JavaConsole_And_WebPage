@@ -1,0 +1,61 @@
+.window{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 0vh;
+			left: 0vh;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+		}
+		.back{
+
+			background-color: grey;
+			height: 90vh;
+			width: 80vh;
+			border-radius: 2vh; 
+		}
+		.inop{
+			padding-left:  1.8vh;
+			padding-bottom:   1.8vh;
+			padding-right:   1.8vh;
+		}
+
+		.output{
+			height: 10vh;
+			width: 96%;
+			font-size: 6vh;
+			text-align: right;
+		}
+
+		/* Button Styling */
+		.in{
+			height: 10vh;
+			width: 10vh;
+			font-size: 5vh;
+			margin: 1%;
+			border-radius: 2vh;
+			border-style: none;
+		}
+		input:hover{
+			cursor: pointer;
+		}
+		.brand{
+			margin-right: 3vh;
+			text-align: right;
+			font-size: 2vh;
+			font-family:arial black;
+		}
+		.red{
+			color: black;
+			background-color: #ec3440;
+		}
+		input[name=operator]{
+			background-color: #006100;
+			color: white;
+		}
+		input[name=oprtr]{
+			background-color: orangered;
+			color: white;
+				
+		}
