@@ -13,7 +13,7 @@ This repository contains three calculator applications: a simple console-based c
   - ➗ Division
 - Loop for continuous calculations until the user decides to exit
 
-### 🌐 Web-Based Scientific Calculator
+### 🌐 Web-Based Basic Calculator
 - Basic arithmetic operations
 - User-friendly interface
   
