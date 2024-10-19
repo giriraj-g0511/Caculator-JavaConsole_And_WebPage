@@ -28,51 +28,23 @@ This repository contains two calculator applications: a simple console-based cal
 - **For Web-Based Calculator:**
   - A modern web browser (Chrome, Firefox, Safari, etc.)
 
-### 🏃 Running the Programs
+### 💡 Usage
 
 #### Java Console Calculator
-To run the calculator application:
-```bash
-java BasicCalculator
-Web-Based Calculator
-Simply open index.html in your web browser. You can interact with the calculator directly from the webpage.
+1. Choose an operation from the menu by entering the corresponding number (1-5).
+2. If you select an operation, enter the two numbers as prompted.
+3. View the result, and you will have the option to continue or exit.
 
-💡 Usage
-Java Console Calculator
-Choose an operation from the menu by entering the corresponding number (1-5).
-If you select an operation, enter the two numbers as prompted.
-View the result, and you will have the option to continue or exit.
-Web-Based Calculator
-Click the buttons corresponding to the operations you want to perform.
-The results will display in the output field.
-You can continue using the calculator without reloading the page.
-📊 Example Output
-Java Console Calculator
+#### Web-Based Calculator
+1. Click the buttons corresponding to the operations you want to perform.
+2. The results will display in the output field.
+3. You can continue using the calculator without reloading the page.
 
-sql
-Copy code
-***** Basic Calculator Java Console *****
-Choose an option below:
-1) Addition (+)
-2) Subtraction (-)
-3) Multiplication (X)
-4) Division (/)
-5) Close
-
-1
-Enter first number:
-5
-Enter second number:
-3
-Result is: 8
-Web-Based Calculator
-
-User can perform calculations and see results dynamically on the webpage.
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to create a pull request.
 
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-👤 Author
+## 👤 Author
 Giriraj Gurav
