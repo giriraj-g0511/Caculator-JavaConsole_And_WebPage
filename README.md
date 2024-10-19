@@ -28,32 +28,11 @@ This repository contains two calculator applications: a simple console-based cal
 - **For Web-Based Calculator:**
   - A modern web browser (Chrome, Firefox, Safari, etc.)
 
-### 🛠️ Installation
+### 🏃 Running the Programs
 
 #### Java Console Calculator
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/giriraj-g0511/Calculator-JavaConsole_And_WebPage.git
-Navigate to the Java project directory:
-bash
-Copy code
-cd Calculator-JavaConsole_And_WebPage
-Compile the Java file:
-bash
-Copy code
-javac BasicCalculator.java
-Web-Based Calculator
-Navigate to the web directory within the cloned repository:
-bash
-Copy code
-cd path/to/web-directory
-Open the index.html file in your web browser.
-🏃 Running the Programs
-Java Console Calculator
 To run the calculator application:
-
-bash
-Copy code
+```bash
 java BasicCalculator
 Web-Based Calculator
 Simply open index.html in your web browser. You can interact with the calculator directly from the webpage.
@@ -63,15 +42,11 @@ Java Console Calculator
 Choose an operation from the menu by entering the corresponding number (1-5).
 If you select an operation, enter the two numbers as prompted.
 View the result, and you will have the option to continue or exit.
-
 Web-Based Calculator
 Click the buttons corresponding to the operations you want to perform.
 The results will display in the output field.
 You can continue using the calculator without reloading the page.
-
-
 📊 Example Output
-
 Java Console Calculator
 
 sql
@@ -90,7 +65,6 @@ Enter first number:
 Enter second number:
 3
 Result is: 8
-
 Web-Based Calculator
 
 User can perform calculations and see results dynamically on the webpage.
