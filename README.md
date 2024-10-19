@@ -1,4 +1,3 @@
-# Caculator-JavaConsole_And_WebPage
 # 📱 Calculator-JavaConsole_And_WebPage
 
 ## 🌟 Overview
@@ -34,7 +33,7 @@ This repository contains two calculator applications: a simple console-based cal
 #### Java Console Calculator
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Calculator-JavaConsole_And_WebPage.git
+   git clone https://github.com/giriraj-g0511/Calculator-JavaConsole_And_WebPage.git
 Navigate to the Java project directory:
 bash
 Copy code
@@ -64,11 +63,15 @@ Java Console Calculator
 Choose an operation from the menu by entering the corresponding number (1-5).
 If you select an operation, enter the two numbers as prompted.
 View the result, and you will have the option to continue or exit.
+
 Web-Based Calculator
 Click the buttons corresponding to the operations you want to perform.
 The results will display in the output field.
 You can continue using the calculator without reloading the page.
+
+
 📊 Example Output
+
 Java Console Calculator
 
 sql
@@ -87,6 +90,7 @@ Enter first number:
 Enter second number:
 3
 Result is: 8
+
 Web-Based Calculator
 
 User can perform calculations and see results dynamically on the webpage.
@@ -97,4 +101,4 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👤 Author
-Giriraj Gurav 
+Giriraj Gurav
