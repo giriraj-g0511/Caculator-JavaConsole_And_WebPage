@@ -1,7 +1,7 @@
 # 📱 Calculator-JavaConsole_And_WebPage
 
 ## 🌟 Overview
-This repository contains two calculator applications: a simple console-based calculator written in Java and a web-based scientific calculator implemented with HTML, CSS, and JavaScript. Users can perform basic arithmetic and scientific calculations through both interfaces.
+This repository contains three calculator applications: a simple console-based calculator written in Java and a web-based scientific calculator and web-based basic calculator implemented with HTML, CSS, and JavaScript. Users can perform basic arithmetic and scientific calculations through both interfaces.
 
 ## 🔧 Features
 
