@@ -43,8 +43,5 @@ This repository contains two calculator applications: a simple console-based cal
 ## 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to create a pull request.
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👤 Author
 Giriraj Gurav
