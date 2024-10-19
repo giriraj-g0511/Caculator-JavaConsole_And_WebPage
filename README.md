@@ -15,6 +15,10 @@ This repository contains three calculator applications: a simple console-based c
 
 ### 🌐 Web-Based Scientific Calculator
 - Basic arithmetic operations
+- User-friendly interface
+  
+### 🌐 Web-Based Scientific Calculator
+- Basic arithmetic operations
 - Scientific functions (e.g., sine, cosine, tangent, powers, roots)
 - User-friendly interface
 - Supports advanced operations like factorial, combinations (nCr), and permutations (nPr)
